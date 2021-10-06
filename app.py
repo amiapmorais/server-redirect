@@ -1,7 +1,7 @@
 from flask import Flask, request
 import requests
 app = Flask(__name__)
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
     return '', 200
 @app.route('/pix', methods=['POST'])
