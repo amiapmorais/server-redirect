@@ -6,7 +6,7 @@ def home():
     return '', 200
 @app.route('/pix', methods=['POST'])
 def pix():
-    requests.post('https://script.google.com/macros/s/AKfycbxsGXB18bwXhPoeQhRKJ2yre4ONITdXwHwjB1EBaLVcXilNTpUQechYfzO9nSRCDab0kg/exec', json= request.json)
+    requests.post('https://script.google.com/macros/s/AKfycbwDFsfPM_brKLPcseyXTVmK3Vh3adEOyTXK2VQmaUtK2Ts00LnC8QB-6zbi3-zecFKpyg/exec', json= request.json)
     return '', 200
 """if __name__ == '__main__':
     app.run((debug=True)"""
